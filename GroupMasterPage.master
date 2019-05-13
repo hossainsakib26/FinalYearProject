@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="GroupMasterPage.master.cs" Inherits="GroupMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>BookBD</title>
+
+
+    <%--bootstrap js--%>
+    <link href="CSS%20File/StyleSheet2.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.slim.min.js"></script>
+    <%--<script src="js/bootstrap.min.js"></script>--%><%-- use for dropdown menu--%>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <%-- Install-Package JQuery.UI.Combined --%>
+    <link href="Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="Content/themes/base/datepicker.css" rel="stylesheet" />
+    <script src="Scripts/jquery-ui-1.12.1.js"></script>
+
+    <%-- Install-Package JQuery.DataTables.Net --%>
+    <script src="Scripts/jquery.dataTables.js"></script>
+    <script src="MyJavaScript.js"></script>
+
+    <link href="MyCSS/modern-business.css" rel="stylesheet" />
+
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('.ppp').attr('src', e.target.result).width(200);//dot . means class name
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+        }//end of read url function
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="bg-light">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#">Book BD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarColor02">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Default.aspx">Home<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="AuthorBooks.aspx">Author</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PublisherBooks.aspx">Publisher</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="CategoryBooks.aspx">Category</a>
+                        </li>
+                        <li>
+                            <input class="form-control mr-sm-2" runat="server" id="txtSearch" type="text" placeholder="Search">
+                        </li>
+                        <li>
+                            <asp:Button class="btn btn-secondary my-2 my-sm-0" ID="btnSearch" runat="server" Text="Search" />
+                        </li>
+                    </ul>
+                    <li class="nav-item dropdown no-arrow bg-light">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" runat="server" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle fa-fw"></i>
+                            <span id="uname" runat="server"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="OwnData.aspx">Settings</a>
+                            <a class="dropdown-item" href="#">Activity Log</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="SignupLogin/SignIn.aspx">Logout</a>
+                        </div>
+                    </li>
+                </div>
+            </nav>
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <%-- div --%>
+            <footer class="py-5 bg-dark">
+                <div class="container">
+                    <p class="m-0 text-center text-white">Copyright &copy; Bookbd.com</p>
+                </div>
+                <!-- /.container -->
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

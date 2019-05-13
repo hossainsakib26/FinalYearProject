@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AUTHOR">
+    <Position X="13.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAABACAAAAAAAgAAQAAACAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Book">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAwQAAgAACAACAgAAiQAAABAAABAAAAAACAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order_Details1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Category">
+    <Position X="16.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAABAAAAAAAAAgCAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Order">
+    <Position X="10.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>WABBAAAAAgAAABAAAAAEAAgAAAAAAAAAAQAAAAgAAAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order_Details1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Order_Details">
+    <Position X="13.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAABAAAARCAABAgAAAAAAAAAAAAAAEAAAAAACAAAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Publisher">
+    <Position X="19.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAABAAAAAQAAIgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Shipping">
+    <Position X="10.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAEBAAAAQgAAAAAAAAAAAAhAAAgAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Stock">
+    <Position X="19.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAIgACACAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Book1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SubCategory">
+    <Position X="13.75" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAgAAAAAAAAAAAAAAgCAA=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Category1" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="User">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAAEAAACAAAACAAAAAAAgAAAAAAAgCAAgAAAAAAAg=</HashCode>
+      <FileName>App_Code\BookModel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Order" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
